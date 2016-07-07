@@ -1688,6 +1688,7 @@
 
 	p {
 		margin: 0 0 2em 0;
+		word-break: keep-all;
 	}
 
 	h1 {
