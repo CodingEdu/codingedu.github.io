@@ -1,0 +1,48 @@
+@import 'libs/vars';
+@import 'libs/functions';
+@import 'libs/mixins';
+@import 'libs/skel';
+
+
+
+/* Tiles */
+
+	.tiles {
+		&:after {
+			content: '';
+			display: block;
+			clear: both;
+		}
+
+		article {
+			float: left;
+
+			> a {
+				padding-top: 50%;
+				margin-top: -1.75em;
+			}
+
+			body:not(.is-touch) & {
+				&:hover {
+					> .image {
+						@include vendor('transform', 'none');
+					}
+				}
+			}
+		}
+	}
+
+/* Footer */
+
+	#footer {
+		> .inner {
+			section {
+				float: left;
+			}
+
+			.copyright {
+				clear: both;
+				padding-top: (_size(element-margin) * 2);
+			}
+		}
+	}
